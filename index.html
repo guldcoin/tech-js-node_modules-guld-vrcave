@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="icon" href="./favicon/.png" type="image/png">-->
+    <title>Guld presentation</title>
+   
+   <!-- <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen" />-->
+
+
+    <script src="./libs/jquery-3.2.1.min.js"></script>
+    <script src="./libs/aframe5.js"></script>
+    <script src="./libs/aframe-animation-component.min.js"></script>
+    <script src="./libs/aframe-extras.min.js"></script>
+    <script src="./libs/hammer.js"></script>
+   
+    <script src="./libs/aframe-gif-shader.min.js"></script>
+    <script src="./libs/aframe-gif-component.min.js"></script>
+   
+    
+</head>
+
+<body>
+
+
+
+    <!-- ***** A-SCENE *****-->
+
+    <a-scene fog="type: exponential; density:0.03; color:#AAA" vr-mode-ui="enabled: false" id="aframe_scene">
+        <!-- ****ASSETS**** -->
+        <a-assets>
+     
+        </a-assets>
+
+        <!--****LIGHTS****-->
+
+        <a-light type="ambient" intensity="0.90" color="#fff"></a-light>
+        <a-light type="point" intensity="0.25" position="0 12 -20"></a-light>
+
+
+
+        <!-- ****ENVIRONMENT****-->
+   
+        <a-plane id="ground" rotation="-90 0 0" position="0 -0.2 0" height="100" width="100" src="./textures/rock2.jpg" repeat="1" color="#444"></a-plane>
+<!--              
+        <a-entity id="extWalls">
+            <a-box position="100 3 0" height="6" width="80" depth="0.2" rotation="0 90 0"></a-box>
+            <a-box position="-100 3 0" height="6" width="80" depth="0.2" rotation="0 90 0"></a-box>
+            <a-box position="0 3 -40" height="6" width="200" depth="0.2" rotation="0 0 0"></a-box>
+            <a-box position="50 3 40" height="6" width="98" depth="0.2" rotation="0 0 0"></a-box>
+            <a-box position="-50 3 40" height="6" width="98" depth="0.2" rotation="0 0 0"></a-box>
+        </a-entity>
+-->
+        <a-sky color="#222" radius="50" src="./textures/rock1.jpg"></a-sky>
+
+        <!-- ****CAMERAS**** -->
+        <a-camera id="camera" position="0 0 20" rotation="0 0 0 " fov="80" near="0.1" wasd-controls ></a-camera>
+            <!--
+ <a-entity id="cursor" cursor="fuse: true; fuseTimeout: 400"
+    position="0 0 -3"
+
+    geometry="primitive: sphere; radius: 0.01;"
+    material="color: #aa0404; shader: flat"
+    raycaster="far: 2000; interval: 300; "
+    power="false">
+
+  </a-entity>
+  -->
+
+
+        <!-- ****OBJECTS****  -->
+      
+      <a-image rotation="0 0 0" position="0 0 -20" height="16" width="9" color="#FFF"> 
+
+      </a-image>
+
+
+    </a-scene>
+
+
+</body>
+
+</html>
