@@ -14,20 +14,20 @@
     <script src="./libs/aframe-animation-component.min.js"></script>
     <script src="./libs/aframe-extras.min.js"></script>
     <script src="./libs/hammer.js"></script>
-   
     <script src="./libs/aframe-gif-shader.min.js"></script>
     <script src="./libs/aframe-gif-component.min.js"></script>
-   
+    
     
 </head>
 
 <body>
-
+<!-- UI-- >
+<!-- <button id="open"> open</button>-->
 
 
     <!-- ***** A-SCENE *****-->
 
-    <a-scene  antialias="true" fog="type: exponential; density:0.02; color:#AAA" vr-mode-ui="enabled: false" id="aframe_scene">
+    <a-scene  antialias="true" fog="type: exponential; density:0.018; color:#AAA" vr-mode-ui="enabled: false" id="aframe_scene">
         <!-- ****ASSETS**** -->
         <a-assets>
         <img id="disMap" src="./maps/rockDisMap2.png"> </img>
@@ -42,14 +42,14 @@
 
         <!--****LIGHTS****-->
 
-        <a-light type="ambient" intensity="0.90" color="#fff"></a-light>
-        <a-light type="point" intensity="0.15" position="0 12 -20"></a-light>
+        <a-light type="ambient" intensity="0.40" color="#FFF"></a-light>
+        <a-light rotation="-90 0 0" type="spot" angle="60" intensity="0.85" position="0 12 -20" penumbra="0.4" color="#C5B358"></a-light>
 
 
 
         <!-- ****ENVIRONMENT****-->
    <a-entity obj-model="obj: #ground-obj; mtl: #ground-mtl" scale="15 5 15"></a-entity>
-   <a-entity obj-model="obj: #ceiling-obj; mtl: #ceiling-mtl" scale="15 5 15"></a-entity>
+   <a-entity  obj-model="obj: #ceiling-obj; mtl: #ceiling-mtl" scale="15 7 15"></a-entity>
        <!-- <a-plane  src="./textures/rock1.jpg" id="ground" rotation="-90 0 0"  displacement-map="#disMap3" displacement-scale="1" displacement-bias="0.5" roughness="1" position="0 -0.2 0" height="200" width="200" repeat="1" color="#444" ></a-plane>-->
 <!--              
         <a-entity id="extWalls">
@@ -79,7 +79,7 @@
 
         <!-- ****OBJECTS****  -->
       
-      <a-image rotation="0 0 0" position="0 8 -20" height="9" width="16" color="#FFF"> 
+      <a-image id="guldScreen" rotation="0 0 0" position="0 8 -20" height="9" width="16" src="./textures/ruawake.png"> 
 
       </a-image>
 
@@ -90,7 +90,11 @@
 </body>
 
  <script type="text/javascript">
- $(document).ready(function(){
+
+  /*
+  $("#open").click(function(){
+    window.open("./presentation.html","_self")
+  })*/
 
 
 var sceneEl = document.querySelector('a-scene');
@@ -98,7 +102,9 @@ var sceneEl = document.querySelector('a-scene');
 
    var cameraEl = document.querySelector('a-camera');
    var camera = cameraEl.object3D;
-
+   console.log(camera)
+   console.log(cameraEl)
+ $(document).ready(function(){
   /* var groundEl = document.querySelector('#ground');
    var ground = groundEl.object3D;
    console.log(groundEl)
@@ -145,4 +151,6 @@ costrainMovement();
  })
    
  </script>
+     <script src="./js/interactions.js"></script>
+
 </html>
