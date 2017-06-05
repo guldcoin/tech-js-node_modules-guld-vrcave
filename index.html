@@ -34,6 +34,7 @@
 
     <!-- ***** A-SCENE 
     density:0.009;*****-->
+  <div id="loading"><p>Loading</p></div>
  <div id="aframebox">
     <a-scene  antialias="false" fog="type: linear; far:300;  color:#efe092" vr-mode-ui="enabled: false" id="aframe_scene" embedded>
         <!-- ****ASSETS**** -->
@@ -136,6 +137,8 @@ var animCount=0;
 setTimeout(function(){
     //$("#aframebox").css('display', 'hidden');
     $("#aframebox").css('z-index', -10);
+    $("#aframebox").css('display', 'none');
+    $("#start").css('z-index', 1000);
      //window.open("./presentation.html","_self")  
  },1900)
 }
@@ -202,7 +205,7 @@ costrainMovement();
 
 
 
-		<div class="reveal">
+		<div class="reveal" id="start">
 			<div class="slides">
 				<div class="slides">
 					<section class="stack" data-id="fc5e565ad0c9d3bcd9cc2c2fae0cc987"><section data-id="6434c982c0e9dd32d374dfe8fee7cfa5" data-background-color="rgb(200,192,81)" data-background-size="contain" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png">
