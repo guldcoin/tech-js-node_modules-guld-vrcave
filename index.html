@@ -16,7 +16,7 @@
     <script src="./libs/hammer.js"></script>
     <script src="./libs/aframe-gif-shader.min.js"></script>
     <script src="./libs/aframe-gif-component.min.js"></script>
-    
+   <!--   <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>-->
     
 </head>
 
@@ -25,9 +25,10 @@
 <!-- <button id="open"> open</button>-->
 
 
-    <!-- ***** A-SCENE *****-->
+    <!-- ***** A-SCENE 
+    density:0.009;*****-->
 
-    <a-scene  antialias="true" fog="type: exponential; density:0.018; color:#AAA" vr-mode-ui="enabled: false" id="aframe_scene">
+    <a-scene  antialias="false" fog="type: linear; far:300;  color:#efe092" vr-mode-ui="enabled: false" id="aframe_scene">
         <!-- ****ASSETS**** -->
         <a-assets>
         <img id="disMap" src="./maps/rockDisMap2.png"> </img>
@@ -42,14 +43,15 @@
 
         <!--****LIGHTS****-->
 
-        <a-light type="ambient" intensity="0.40" color="#FFF"></a-light>
-        <a-light rotation="-90 0 0" type="spot" angle="60" intensity="0.85" position="0 12 -20" penumbra="0.4" color="#C5B358"></a-light>
+        <a-light type="ambient" intensity="0.30" color="#FFF"></a-light>
+        <a-light rotation="-90 0 0" type="spot" angle="60" intensity="0.85" position="0 12 0" penumbra="0.04" color="#C5B358"></a-light>
+    <!--    <a-light rotation="-90 0 0" type="directional" angle="60" intensity="0.15" position="0 12 -20" color="#FFF"></a-light>-->
 
 
 
         <!-- ****ENVIRONMENT****-->
-   <a-entity obj-model="obj: #ground-obj; mtl: #ground-mtl" scale="15 5 15"></a-entity>
-   <a-entity  obj-model="obj: #ceiling-obj; mtl: #ceiling-mtl" scale="15 7 15"></a-entity>
+   <a-entity id="ground" obj-model="obj: #ground-obj; mtl: #ground-mtl" scale="35 5 35"></a-entity>
+   <a-entity  obj-model="obj: #ceiling-obj; mtl: #ceiling-mtl" scale="35 11 35" position="0 -5 0"></a-entity>
        <!-- <a-plane  src="./textures/rock1.jpg" id="ground" rotation="-90 0 0"  displacement-map="#disMap3" displacement-scale="1" displacement-bias="0.5" roughness="1" position="0 -0.2 0" height="200" width="200" repeat="1" color="#444" ></a-plane>-->
 <!--              
         <a-entity id="extWalls">
@@ -60,10 +62,10 @@
             <a-box position="-50 3 40" height="6" width="98" depth="0.2" rotation="0 0 0"></a-box>
         </a-entity>
 -->
-        <a-sky theta-length="90" color="#222"  radius="100" shader="standard" src="./textures/rock1.jpg"></a-sky>
+     <!--   <a-sky theta-length="90" color="#222"  radius="100" shader="standard" src="./textures/rock1.jpg"></a-sky>-->
 <!--<a-plane id="ceiling" rotation="90 90 0" displacement-map="#disMap2" displacement-scale="2" position="0 42.2 0" height="200" width="200" src="./textures/rock1.jpg" repeat="1" color="#444"></a-plane>-->
         <!-- ****CAMERAS**** -->
-        <a-camera id="camera" position="0 4 20" rotation="0 0 0 " fov="80" near="0.1" wasd-controls ></a-camera>
+        <a-camera id="camera" position="0 4 90" rotation="0 0 0 " fov="80" near="0.1" wasd-controls="acceleration:200" ></a-camera>
             <!--
  <a-entity id="cursor" cursor="fuse: true; fuseTimeout: 400"
     position="0 0 -3"
@@ -79,7 +81,7 @@
 
         <!-- ****OBJECTS****  -->
       
-      <a-image id="guldScreen" rotation="0 0 0" position="0 8 -20" height="9" width="16" src="./textures/ruawake.png"> 
+      <a-image material="fog: false" id="guldScreen" rotation="0 0 0" position="0 8 0" height="9" width="16" src="./textures/ruawake.png" mouse-cursor> 
 
       </a-image>
 
@@ -102,9 +104,11 @@ var sceneEl = document.querySelector('a-scene');
 
    var cameraEl = document.querySelector('a-camera');
    var camera = cameraEl.object3D;
-   console.log(camera)
-   console.log(cameraEl)
+
  $(document).ready(function(){
+    var guldScreenEL = document.querySelector("#guldScreen");
+    var guldScreen = guldScreenEL.object3D;
+     console.log(ground.object3D)
   /* var groundEl = document.querySelector('#ground');
    var ground = groundEl.object3D;
    console.log(groundEl)
@@ -115,42 +119,100 @@ texture.wrapT = THREE.RepeatWrapping;
 texture.repeat.set( 4, 4 );
    ground.children[0].material.bumpMap= texture;
    console.log(ground)*/
+var guldX = guldScreen.position.x;
+var guldZ = guldScreen.position.z;
 
+var times=0;
+var animCount=0;
 
+ function enterPresentation(){
+  if(confirm("Are you awake?")){
+    // add animation, on animation finish:
+        cameraEl.setAttribute('animation__'+animCount,{property:'position', dir:'normal', dur: 2000, easing:'easeInSine', loop:false, to:'0 4 0'})  
+  setTimeout(function(){
+ window.open("./presentation.html","_self")
+  },1900)
+                
+              
+                }
+  else{
+    cameraEl.setAttribute('animation__'+animCount,{property:'position', dir:'normal', dur: 1000, easing:'easeInSine', loop:false, to:'20 4 20'})  
+  animCount++;
+  setTimeout(function(){
+    times=0;
+
+  },1000)
+
+  }
+ }
    function costrainMovement(){
-    var camX = camera.position.x;
-    var camZ = camera.position.z;
+    var camPos= cameraEl.getAttribute("position")
+    var camX = camPos.x
+
+    var camZ = camPos.z
     // 50 radius 
- //console.log("x : "+ camX+" z : "+camZ)
-// console.log(Math.abs(camX)+Math.abs(camZ))
-    if (Math.abs(camX)+Math.abs(camZ)>50){
-              console.log("yeah")
+ /*console.log("x : "+ camX+" z : "+camZ)
+ console.log(Math.abs(camX)+Math.abs(camZ))*/
+console.log(guldZ - camZ);
+if(guldX - camX<16&&guldZ - camZ<15&& guldX + camX<16&&guldZ + camZ<15&&times==0){
+  enterPresentation();
+  times++;
+}
+
+
+
+
+/*
+    if (Math.abs(camX)+Math.abs(camZ)<8&&Math.abs(camX)+Math.abs(camZ)>0&&times==0){
+                times++;
+                if(confirm("Are you awake?")){
+                window.open("./presentation.html","_self")
+              
+                }
+   } else if(Math.abs(camX)+Math.abs(camZ)>8){times=0}
+     else if (Math.abs(camX)+Math.abs(camZ)<2&&Math.abs(camX)+Math.abs(camZ)>0){
+                window.open("./presentation.html","_self")
+   }
+
+*/
+
+
+
+   // --MOVEMENT COSTRAINT
+
+    if (Math.abs(camX)+Math.abs(camZ)>100){
+      //alert("you cannot excape")
 
       if(camX>0&&camZ>0){
-        console.log("yeah")
       cameraEl.setAttribute("position", {x: camX-1, z: camZ-1})
-      //camera.position.x -= 1
-      //camera.position.z -= 1
+      //camera.position.x -= 10
+      //camera.position.z -= 10
       } else if(camX>0&&camZ<=0){
+    cameraEl.setAttribute("position", {x: camX-1, z: camZ+1})
 
-      camera.position.x -= 1
-      camera.position.z += 1
+      //camera.position.x -= 10
+      //camera.position.z += 10
       } else if(camX<=0&&camZ<=0){
-      camera.position.x += 1
-      camera.position.z += 1
+    cameraEl.setAttribute("position", {x: camX+1, z: camZ+1})
+
+      //camera.position.x += 10
+     // camera.position.z += 10
       } else if(camX<=0&&camZ>0){
-      camera.position.x += 1
-      camera.position.z -= 1
+   cameraEl.setAttribute("position", {x: camX+1, z: camZ-1})
+
+
+     // camera.position.x += 10
+      //camera.position.z -= 10
       }
     }
     requestAnimationFrame(costrainMovement);
-   }
+  
+}
 
 costrainMovement();
-
  })
    
  </script>
-     <script src="./js/interactions.js"></script>
+    <!-- <script src="./js/interactions.js"></script>-->
 
 </html>

@@ -1,16 +1,16 @@
-     document.addEventListener('mousedown', function() {
+     document.addEventListener('click', function() {
+                        event.preventDefault();
+
             onDocumentMouseDown(event);
 
         }, false);
 
  var raycaster = new THREE.Raycaster();
 var mouse = new THREE.Vector2();
-var guldScreenEL = document.querySelector("#guldScreen");
-var guldScreen = guldScreenEL.object3D;
+
 var objs=[guldScreen];
         function onDocumentMouseDown(event) {
 
-            //    event.preventDefault();
             mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
             mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
             raycaster.setFromCamera(mouse, camera.children[0]);
