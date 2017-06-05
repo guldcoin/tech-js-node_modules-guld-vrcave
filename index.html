@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+	<html class="sl-root decks export loaded ua-phantomjs reveal-viewport theme-font-montserrat theme-color-white-blue">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Plato&#39;s Cave Screen: Slides</title>
+		<meta name="description" content="Slides">
+        <link href="./css/main.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="./css/aframe.css" rel="stylesheet" type="text/css" media="screen" />
+		<meta content="authenticity_token" name="csrf-param" />
+		<meta content="aNhkK6FAqAFjeKQ3aHrCLGxXP1QeS9EKG3XPg0mIA5g=" name="csrf-token" />
+		<style id="user-css-output" type="text/css"></style>
+	
+	
 
-<head>
-    <meta charset="UTF-8">
-    <!--<link rel="icon" href="./favicon/.png" type="image/png">-->
-    <title>Guld presentation</title>
-   
-   <!-- <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen" />-->
 
 
     <script src="./libs/jquery-3.2.1.min.js"></script>
@@ -27,8 +34,8 @@
 
     <!-- ***** A-SCENE 
     density:0.009;*****-->
-
-    <a-scene  antialias="false" fog="type: linear; far:300;  color:#efe092" vr-mode-ui="enabled: false" id="aframe_scene">
+ <div id="aframebox">
+    <a-scene  antialias="false" fog="type: linear; far:300;  color:#efe092" vr-mode-ui="enabled: false" id="aframe_scene" embedded>
         <!-- ****ASSETS**** -->
         <a-assets>
         <img id="disMap" src="./maps/rockDisMap2.png"> </img>
@@ -87,9 +94,7 @@
 
 
     </a-scene>
-
-
-</body>
+</div>
 
  <script type="text/javascript">
 
@@ -129,7 +134,10 @@ var animCount=0;
  cameraEl.setAttribute('animation__'+animCount,{property:'position', dir:'normal', dur: 2000, easing:'easeInSine', loop:false, to:'0 8 0'})  
 
 setTimeout(function(){
- window.open("./presentation.html","_self")  },1900)
+    //$("#aframebox").css('display', 'hidden');
+    $("#aframebox").css('z-index', -10);
+     //window.open("./presentation.html","_self")  
+ },1900)
 }
  
    function costrainMovement(){
@@ -191,6 +199,508 @@ costrainMovement();
  })
    
  </script>
- <!-- <script src="./js/interactions.js"></script>-->
 
+
+
+		<div class="reveal">
+			<div class="slides">
+				<div class="slides">
+					<section class="stack" data-id="fc5e565ad0c9d3bcd9cc2c2fae0cc987"><section data-id="6434c982c0e9dd32d374dfe8fee7cfa5" data-background-color="rgb(200,192,81)" data-background-size="contain" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png">
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 155px;" data-block-id="de12026436be1ff37defe3a49ffdee40"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(31, 16, 76); transition-duration: 1.6s; transition-delay: 0.7s;" data-animation-type="fade-in">
+<h1><span style="font-size:2.0em">Are You Awake?</span></h1>
+</div></div></section><section data-background-size="contain" data-id="19262a6544d3defca70703ff1d43804a" data-background-color="rgb(200,192,81)" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png">
+
+
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 478px; height: 586px; left: 480px; top: 0px;" data-block-id="502681a49901fbfc3927ef9491e70e29"><div class="sl-block-content" style="z-index: 11; transition-duration: 1s; transition-delay: 0.2s;" data-animation-type="fade-in"><img style="" data-natural-width="240" data-natural-height="294" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/240px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 456px; left: 24px; top: 0px;" data-block-id="abe0fcbf65f21cc1f59bf42161435fe9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(31, 16, 76); font-size: 108%; transition-duration: 1.5s; transition-delay: 1s;" data-animation-type="fade-in">
+<p style="text-align:left"><span style="font-size:1.0em">"I supposed that all the objects ... that had ever entered into my mind when awake, had in them no more truth than the illusions of my dreams. ... whilst I thus wished to think that all was false, it was absolutely necessary that I, who thus thought, should be somewhat; and as I observed ... this truth, </span></p>
+
+<p style="text-align:left"> </p>
+
+<p style="text-align:left"><strong><span style="font-size:1.0em"><span style="font-size:1.2em">I think, therefore I am</span>"</span></strong></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 829px; left: 80px; top: 630px;" data-block-id="4e6a3ecb7162d0bdb040459cdb4c15c4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; transition-duration: 1.5s; transition-delay: 2.5s;" data-animation-type="fade-in">
+<h3>
+<a href="gap://media/text/html/gutenberg.org/Rene-Descartes" target="_top">Rene Descartes</a>, <a href="gap://media/text/html/gutenberg.org/Rene-Descartes/A%20Discourse%20on%20Method,%20by%20Ren%C3%A9%20Descartes..htm" target="_top">A Discourse on Method</a>
+</h3>
+</div></div></section><section data-background-color="rgb(200,192,81)" data-background-size="contain" data-id="54875c4009641aa8ce2289e523d70f66" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png">
+<div class="sl-block" data-block-type="text" style="width: 468px; left: 80px; top: 12px; height: auto;" data-block-id="ae76386c2699efdb5d498fb75c9bb6e5">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="color: rgb(31, 16, 76); z-index: 11; transition-duration: 3s; transition-delay: 0.1s;" data-animation-type="fade-in">
+<h1>I think,</h1>
+</div>
+</div>
+
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 79px; height: 80px; left: 280px; top: 241px;" data-block-id="04f5d9a3e019f015e33ac04fd150415c">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(31, 16, 76)" data-shape-stretch="true" style="z-index: 13; transition-delay: 5.5s; transition-duration: 1.2s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(31, 16, 76)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 51px; left: 369px; top: 451px;" data-block-id="4a2e6906b067eb5f65c50a1084acf805">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(31, 16, 76); transition-duration: 1.2s; transition-delay: 4.5s;" data-animation-type="fade-in">
+        <p>life</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 72px; left: 280px; top: 340px;" data-block-id="423cb44255dedb9058dd8b0b1e688ba9">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(31, 16, 76); transition-duration: 1.2s; transition-delay: 5.5s;" data-animation-type="fade-in">
+        <p>(self)</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 79px; height: 80px; left: 442px; top: 571px;" data-block-id="8cab34bd286c28945d3c052f6928fecc">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(31, 16, 76)" data-shape-stretch="true" style="z-index: 16; transition-duration: 1s; transition-delay: 0.1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(31, 16, 76)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 134px; left: 414px; top: 651px;" data-block-id="3d0dc99fc056c266e7465df92301f296">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(31, 16, 76); transition-duration: 1s; transition-delay: 0.1s;" data-animation-type="fade-in">
+        <p>Observer</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 125px; left: 600px; top: 349px;" data-block-id="a8aac23a70d182adb1bc486cba075b81">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(31, 16, 76); transition-duration: 1.2s; transition-delay: 2.5s;" data-animation-type="fade-in">
+        <p>thoughts</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 408px; top: 490px;" data-block-id="84ea28564c9170a35cbed7c46a7716c2">
+    <div class="sl-block-content" data-line-x1="-95" data-line-y1="338" data-line-x2="-148" data-line-y2="260" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 19; transition-duration: 1.2s; transition-delay: 4s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="53" height="78" viewbox="-148 260 53 78"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-95" y1="338" x2="-147" y2="262"></line><line stroke="#1f104c" stroke-width="2" x1="-95" y1="338" x2="-147" y2="262"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-147,262) rotate(-34.196)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 125px; left: 534px; top: 454px;" data-block-id="8e40a1df80ceab204b47286895618566">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(31, 16, 76); transition-duration: 1.2s; transition-delay: 1.5s;" data-animation-type="fade-in">
+        <p>media</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 127px; height: 108px; left: 600px; top: 241px;" data-block-id="30b3c65af90a7be9f7e80bab95cdf81f">
+    <div class="sl-block-content" style="z-index: 10; transition-duration: 1.2s; transition-delay: 2.5s;" data-animation-type="fade-in">
+        <img style="" data-natural-width="300" data-natural-height="255" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3870887/blue-cloud-bubble-md.png">
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 333px; top: 386px;" data-block-id="f28d3dc82a36e954908ee294f0d45344">
+    <div class="sl-block-content" data-line-x1="-96" data-line-y1="332" data-line-x2="-140" data-line-y2="269" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 21; transition-duration: 1.2s; transition-delay: 5s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="44" height="63" viewbox="-140 269 44 63"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-96" y1="332" x2="-139" y2="271"></line><line stroke="#1f104c" stroke-width="2" x1="-96" y1="332" x2="-139" y2="271"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-139,271) rotate(-34.931)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 501px; top: 493px;" data-block-id="6f25ec1fc94012e3e2c099a4bc6ad899">
+    <div class="sl-block-content" data-line-x1="-70" data-line-y1="320" data-line-x2="-4" data-line-y2="242" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 22; transition-duration: 1.1s; transition-delay: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="66" height="78" viewbox="-70 242 66 78"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-70" y1="320" x2="-5" y2="244"></line><line stroke="#1f104c" stroke-width="2" x1="-70" y1="320" x2="-5" y2="244"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-5,244) rotate(40.236)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 588px; top: 388px;" data-block-id="19fba5a61f9a2cd788d7363a3b46173e">
+    <div class="sl-block-content" data-line-x1="-70" data-line-y1="320" data-line-x2="-11" data-line-y2="245" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 23; transition-duration: 1.2s; transition-delay: 2s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="59" height="75" viewbox="-70 245 59 75"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-70" y1="320" x2="-12" y2="247"></line><line stroke="#1f104c" stroke-width="2" x1="-70" y1="320" x2="-12" y2="247"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-12,247) rotate(38.191)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 468px; left: 395px; top: 12px; height: auto;" data-block-id="3407b90b785ca14424c286e9a23e0b68">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="color: rgb(31, 16, 76); z-index: 24; transition-duration: 2s; transition-delay: 3s;" data-animation-type="fade-in">
+<h1>therefore</h1>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 468px; left: 246px; top: 110px; height: auto;" data-block-id="726b64cb32f066ac866913f8c42a1e3f">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="color: rgb(31, 16, 76); z-index: 25; transition-duration: 4s; transition-delay: 4s;" data-animation-type="fade-in">
+<h1>I am.</h1>
+</div>
+</div></section><section data-background-color="rgb(200,192,81)" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png" data-background-size="contain" data-id="fde563e837ced5fe6fa456d67e55cad2">
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 12px; height: auto;" data-block-id="970e7a63011daacd95293a4e6c514aba">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="color: rgb(31, 16, 76); z-index: 11; transition-duration: 1s;" data-animation-type="fade-in">
+<h1>The Blocktree</h1>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 912px; left: 24px; top: 101px;" data-block-id="62cb69b331bff9d59e4de7b9a4ab72dd">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(31, 16, 76); transition-duration: 1s; transition-delay: 1s;" data-animation-type="fade-in">
+<p>The symbolic representation of reality from the perspective of one or more observer.</p>
+</div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 79px; height: 80px; left: 41px; top: 240px;" data-block-id="42f25a9e236e9eef5ab12816225365f2">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(31, 16, 76)" data-shape-stretch="true" style="z-index: 13; transition-duration: 1s;" data-animation-type="slide-left">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(31, 16, 76)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 51px; left: 132px; top: 436px;" data-block-id="17c6a4cded9a9477fe235093e16dfe8e">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(31, 16, 76); transition-duration: 1s;" data-animation-type="slide-left">
+        <p>life</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 72px; left: 43px; top: 325px;" data-block-id="bd0959e6aafe2c280109a9662c2bbdc4">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(31, 16, 76); transition-duration: 1s;" data-animation-type="slide-left">
+        <p>(self)</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 79px; height: 80px; left: 205px; top: 556px;" data-block-id="6434bafe818289b6b21c4fe5e5e5a940">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(31, 16, 76)" data-shape-stretch="true" style="z-index: 16; transition-duration: 1s;" data-animation-type="slide-left">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(31, 16, 76)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 134px; left: 178px; top: 645px;" data-block-id="6446736082ff5a25846636fe68a78df0">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(31, 16, 76); transition-duration: 1s;" data-animation-type="slide-left">
+        <p>Observer</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 125px; left: 363px; top: 334px;" data-block-id="8febd66cb1c591eda3ce369e9eb6fdca">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(31, 16, 76); transition-duration: 1s;" data-animation-type="slide-left">
+        <p>thoughts</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 171px; top: 475px;" data-block-id="e2dfecad93be86de9bd560ec1450066a">
+    <div class="sl-block-content" data-line-x1="-95" data-line-y1="338" data-line-x2="-148" data-line-y2="260" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 19; transition-duration: 1s;" data-animation-type="slide-left">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="53" height="78" viewbox="-148 260 53 78"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-95" y1="338" x2="-147" y2="262"></line><line stroke="#1f104c" stroke-width="2" x1="-95" y1="338" x2="-147" y2="262"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-147,262) rotate(-34.196)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 125px; left: 297px; top: 439px;" data-block-id="ecde4e04a0f691d9f33f4c9cbd5c232a">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(31, 16, 76); transition-duration: 1s;" data-animation-type="slide-left">
+        <p>media</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 127px; height: 108px; left: 363px; top: 226px;" data-block-id="ed2f278f0f947462426f8b87b2ccbc2f">
+    <div class="sl-block-content" style="z-index: 10; transition-duration: 1s;" data-animation-type="slide-left">
+        <img style="" data-natural-width="300" data-natural-height="255" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3870887/blue-cloud-bubble-md.png">
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 96px; top: 371px;" data-block-id="4dac0b3dcbdebf46116f650983fc202b">
+    <div class="sl-block-content" data-line-x1="-96" data-line-y1="332" data-line-x2="-140" data-line-y2="269" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 21; transition-duration: 1s;" data-animation-type="slide-left">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="44" height="63" viewbox="-140 269 44 63"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-96" y1="332" x2="-139" y2="271"></line><line stroke="#1f104c" stroke-width="2" x1="-96" y1="332" x2="-139" y2="271"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-139,271) rotate(-34.931)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 264px; top: 478px;" data-block-id="f770526def34ef5c73efa91f421ef87e">
+    <div class="sl-block-content" data-line-x1="-70" data-line-y1="320" data-line-x2="-4" data-line-y2="242" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 22; transition-duration: 1s;" data-animation-type="slide-left">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="66" height="78" viewbox="-70 242 66 78"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-70" y1="320" x2="-5" y2="244"></line><line stroke="#1f104c" stroke-width="2" x1="-70" y1="320" x2="-5" y2="244"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-5,244) rotate(40.236)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 351px; top: 373px;" data-block-id="7691c22f90f0d20d938317195f62bbfb">
+    <div class="sl-block-content" data-line-x1="-70" data-line-y1="320" data-line-x2="-11" data-line-y2="245" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 23; transition-duration: 1s;" data-animation-type="slide-left">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="59" height="75" viewbox="-70 245 59 75"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-70" y1="320" x2="-12" y2="247"></line><line stroke="#1f104c" stroke-width="2" x1="-70" y1="320" x2="-12" y2="247"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-12,247) rotate(38.191)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 536px; height: 554px; left: 461.5px; top: 130px;" data-block-id="f4aa83ed8d955efcfe31972d98f4f0f6">
+    <div class="sl-block-content" style="z-index: 24; transition-duration: 2s; transition-delay: 2s;" data-animation-type="fade-in">
+        <img style="" data-natural-width="1305" data-natural-height="1350" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3873836/guld-Network-tree.png">
+    </div>
+</div>
+
+
+</section><section data-background-color="rgb(200,192,81)" data-background-size="contain" data-id="4930b535a9b3fa6516b6d1f4e563c09b" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png">
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 716px; left: 122px; top: 570px;" data-block-id="591173c3d853c5ab1b1972caa73003c7">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(31, 16, 76); transition-duration: 2s; transition-delay: 4s; border-style: solid; border-width: 1px; padding: 1px;" data-animation-type="fade-in" dir="ui">
+        <p>We are guld,
+            <br>
+a community of thinking beings who explore and create this universe.
+        </p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 232px; height: 260px; left: 593px; top: -14px;" data-block-id="df2d0718bfe876afda15dac7d81e5ee9">
+    <div class="sl-block-content" style="z-index: 12; transition-duration: 1s; transition-delay: 3.5s;" data-animation-type="fade-in">
+        <img style="" data-natural-width="1205" data-natural-height="1350" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3873961/5_guld__purple_logo.png">
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 79px; height: 80px; left: 253px; top: 76px;" data-block-id="e4e6c6d56f3f227fc5ffb7c57bcb3a58">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(0, 0, 255)" data-shape-stretch="true" style="z-index: 14; transition-delay: 1.6s; transition-duration: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(0, 0, 255)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 51px; left: 348px; top: 286px;" data-block-id="29949ae2df2ac4c1c3e5b0f941f8b9c1">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(0, 0, 255); transition-duration: 1s; transition-delay: 1.2s;" data-animation-type="fade-in">
+<p>life</p>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 155px; left: 213px; top: 166px;" data-block-id="6f7e8f3d2181fc215a6ee1df3a9e3e7d">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(0, 0, 255); transition-duration: 1s; transition-delay: 1.6s;" data-animation-type="fade-in">
+        <p>(yourself)</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 79px; height: 80px; left: 441px; top: 421px;" data-block-id="ef5a2900048f82354c9228b05c62bf17">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(0, 0, 255)" data-shape-stretch="true" style="z-index: 17; transition-duration: 1s; transition-delay: 0.5s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(0, 0, 255)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 134px; left: 413px; top: 501px;" data-block-id="f255c9a07f3159d37f5048d29e745c8b">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(0, 0, 255); transition-duration: 1s; transition-delay: 0.5s;" data-animation-type="fade-in">
+        <p>You</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 382px; top: 325px;" data-block-id="5917862c5f5bda7df372cda8032268d5">
+    <div class="sl-block-content" data-line-x1="-95" data-line-y1="338" data-line-x2="-165" data-line-y2="260" data-line-color="#0000ff" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 19; transition-duration: 1s; transition-delay: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="70" height="78" viewbox="-165 260 70 78"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-95" y1="338" x2="-164" y2="261"></line><line stroke="#0000ff" stroke-width="2" x1="-95" y1="338" x2="-164" y2="261"></line><path style="fill: rgba(0,0,0,0);" stroke="#0000ff" stroke-width="2" transform="translate(-164,261) rotate(-41.906)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 291px; top: 217px;" data-block-id="efdbb31c8b5de696d7cde3096209ae5f">
+    <div class="sl-block-content" data-line-x1="-96" data-line-y1="332" data-line-x2="-155" data-line-y2="265" data-line-color="#0000ff" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 21; transition-duration: 1s; transition-delay: 1.4s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="59" height="67" viewbox="-155 265 59 67"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-96" y1="332" x2="-154" y2="267"></line><line stroke="#0000ff" stroke-width="2" x1="-96" y1="332" x2="-154" y2="267"></line><path style="fill: rgba(0,0,0,0);" stroke="#0000ff" stroke-width="2" transform="translate(-154,267) rotate(-41.367)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 166px; left: 520px; top: 286px;" data-block-id="886d5e261ee7a9cf5185b4b8babef3e5">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(0, 0, 255); transition-duration: 1s; transition-delay: 2.5s;" data-animation-type="fade-in">
+        <p>community</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 509px; top: 325px;" data-block-id="e882cd1b28246ed1c9318aa6cb6e57d3">
+    <div class="sl-block-content" data-line-x1="-218" data-line-y1="322" data-line-x2="-142" data-line-y2="244" data-line-color="#0000ff" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 23; transition-duration: 1s; transition-delay: 2s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="76" height="78" viewbox="-218 244 76 78"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-218" y1="322" x2="-143" y2="245"></line><line stroke="#0000ff" stroke-width="2" x1="-218" y1="322" x2="-143" y2="245"></line><path style="fill: rgba(0,0,0,0);" stroke="#0000ff" stroke-width="2" transform="translate(-143,245) rotate(44.256)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 614px; top: 230px;" data-block-id="017383dbedb1763902ffb6b3af3b0deb">
+    <div class="sl-block-content" data-line-x1="38" data-line-y1="206" data-line-x2="90" data-line-y2="150" data-line-color="#0000ff" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 24; transition-duration: 1s; transition-delay: 3s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="52" height="56" viewbox="38 150 52 56"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="38" y1="206" x2="89" y2="151"></line><line stroke="#0000ff" stroke-width="2" x1="38" y1="206" x2="89" y2="151"></line><path style="fill: rgba(0,0,0,0);" stroke="#0000ff" stroke-width="2" transform="translate(89,151) rotate(42.879)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div></section><section data-background-color="rgb(200,192,81)" data-background-size="contain" data-id="6952a1a3f6226385689533ca1891ce7c" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png">
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 716px; left: 122px; top: 607px;" data-block-id="91ffc4d58b5a08d8f942428bf91a8052">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(31, 16, 76); transition-duration: 3.5s; transition-delay: 5.5s; border-style: solid; border-width: 1px; padding: 1px;" data-animation-type="fade-in" dir="ui">
+        <p>Like you, we have a unique perspective, and require proof before accepting an idea as truth.</p>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="shape" style="width: 79px; height: 80px; left: 286px; top: 49px;" data-block-id="aa3cbe077f18fbeb3ca6f44b3dcece4f">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(0, 0, 255)" data-shape-stretch="true" style="z-index: 11; transition-delay: 8.5s; transition-duration: 3.5s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(0, 0, 255)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 51px; left: 312px; top: 266px;" data-block-id="99981442775dee51f4521d798e2b4afe">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(31, 16, 76); transition-duration: 1s; transition-delay: 3.2s;" data-animation-type="fade-in">
+        <p>life</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 79px; left: 286px; top: 132px;" data-block-id="9cdd8110153591891147f03d4b24e57f">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(0, 0, 255); transition-duration: 3.5s; transition-delay: 8.5s;" data-animation-type="fade-in">
+        <p>You?</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 350px; top: 305px;" data-block-id="75f7b48aa90312f186f8fe5b5626c3d3">
+    <div class="sl-block-content" data-line-x1="-95" data-line-y1="338" data-line-x2="-165" data-line-y2="260" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 14; transition-duration: 1s; transition-delay: 2.6s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="70" height="78" viewbox="-165 260 70 78"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-95" y1="338" x2="-164" y2="261"></line><line stroke="#1f104c" stroke-width="2" x1="-95" y1="338" x2="-164" y2="261"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-164,261) rotate(-41.906)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 254px; top: 207px;" data-block-id="63f670397c7aa82012e8da08f45d300b">
+    <div class="sl-block-content" data-line-x1="-96" data-line-y1="332" data-line-x2="-158" data-line-y2="267" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 15; transition-duration: 1s; transition-delay: 3.8s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="62" height="65" viewbox="-158 267 62 65"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-96" y1="332" x2="-157" y2="268"></line><line stroke="#1f104c" stroke-width="2" x1="-96" y1="332" x2="-157" y2="268"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-157,268) rotate(-43.647)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 166px; left: 554px; top: 266px;" data-block-id="4154198a7a09124a9338071c81b012ed">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(31, 16, 76); transition-duration: 1s; transition-delay: 1.5s;" data-animation-type="fade-in">
+        <p>community</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 527px; top: 305px;" data-block-id="9a8efbee6ed3acc29efdcea869841166">
+    <div class="sl-block-content" data-line-x1="-218" data-line-y1="322" data-line-x2="-142" data-line-y2="244" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 17; transition-duration: 1s; transition-delay: 1.2s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="76" height="78" viewbox="-218 244 76 78"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-218" y1="322" x2="-143" y2="245"></line><line stroke="#1f104c" stroke-width="2" x1="-218" y1="322" x2="-143" y2="245"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(-143,245) rotate(44.256)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 640px; top: 207px;" data-block-id="bba196339e83781abd2ef7923f15dc90">
+    <div class="sl-block-content" data-line-x1="38" data-line-y1="206" data-line-x2="90" data-line-y2="150" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 18; transition-duration: 1s; transition-delay: 1.8s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="52" height="56" viewbox="38 150 52 56"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="38" y1="206" x2="89" y2="151"></line><line stroke="#1f104c" stroke-width="2" x1="38" y1="206" x2="89" y2="151"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(89,151) rotate(42.879)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+
+
+<div class="sl-block" data-block-type="shape" style="width: 38px; height: 43px; left: 103px; top: 53px;" data-block-id="262855171024c63a0642902973dd225a">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(31, 16, 76)" data-shape-stretch="true" style="z-index: 19; transition-delay: 4.3s; transition-duration: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(31, 16, 76)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 38px; height: 43px; left: 103px; top: 108px;" data-block-id="799d0773f0557bb82dd32c5c013cfe74">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(31, 16, 76)" data-shape-stretch="true" style="z-index: 20; transition-delay: 4.3s; transition-duration: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(31, 16, 76)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 155px; left: 91px; top: 159px;" data-block-id="3d2df7799a38c27493a1c33ad6c35778">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(31, 16, 76); transition-duration: 1s; transition-delay: 4.3s;" data-animation-type="fade-in">
+        <p>(ourselves)</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 220px; height: 247px; left: 363px; top: 367px;" data-block-id="033f9a9b997a2fa0d3e84a5abadb152a"><div class="sl-block-content" style="z-index: 23; transition-duration: 1s; transition-delay: 0.2s;" data-animation-type="fade-in"><img style="" data-natural-width="1205" data-natural-height="1350" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3873961/5_guld__purple_logo.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 220px; height: 247px; left: 637px; top: -15px;" data-block-id="5a9d437cb4430e131c1a148882034f59"><div class="sl-block-content" style="z-index: 24; transition-duration: 1s; transition-delay: 2s;" data-animation-type="fade-in"><img style="" data-natural-width="1205" data-natural-height="1350" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3873961/5_guld__purple_logo.png"></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 38px; height: 43px; left: 150px; top: 53px;" data-block-id="be681eeb955b647a1a63187707cbd053">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(31, 16, 76)" data-shape-stretch="true" style="z-index: 25; transition-delay: 4.3s; transition-duration: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(31, 16, 76)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 38px; height: 43px; left: 150px; top: 108px;" data-block-id="44ad8f2e2f9a9ad766aa5d8e923f4a88">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(31, 16, 76)" data-shape-stretch="true" style="z-index: 26; transition-delay: 4.3s; transition-duration: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(31, 16, 76)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 38px; height: 43px; left: 196px; top: 53px;" data-block-id="4aa93a38f2acbb20dfceeefebfee75c4">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(31, 16, 76)" data-shape-stretch="true" style="z-index: 27; transition-delay: 4.3s; transition-duration: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(31, 16, 76)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 38px; height: 43px; left: 196px; top: 108px;" data-block-id="1068fa54abb8ad941e4cdf0beeb60121">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(31, 16, 76)" data-shape-stretch="true" style="z-index: 28; transition-delay: 4.3s; transition-duration: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(31, 16, 76)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div></section><section data-background-color="rgb(200,192,81)" data-background-size="contain" data-id="21bd72d1d5f7738c5cf51aae8533fc7c" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png">
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 612px; left: 174px; top: 607px;" data-block-id="2a7d24f24dd9865402de5608a98c427a">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(31, 16, 76); transition-delay: 6s; transition-duration: 2s;" dir="ui" data-animation-type="fade-in">
+        <h2>
+            <a href="gap://media/text/html/gutenberg.org/Plato" target="_top">Plato</a>, 
+            <a href="gap://media/text/html/gutenberg.org/Plato/The%20Republic,%20by%20Plato.htm#link2H_4_0010" target="_top">The Republic</a>
+        </h2>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 467px; left: 22px; top: 24px;" data-block-id="1f381ecbff20aaa7990b15f5ebb78c59">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(31, 16, 76); font-size: 115%; transition-duration: 2.5s; transition-delay: 1.7s;" data-animation-type="fade-in">
+<p>"Would they not be sure to fancy when one of the passers-by spoke that <strong>the voice which they heard came from the passing shadow?</strong></p>
+
+<p>No question, he replied.</p>
+
+<p><strong>To them, I said, the truth would be literally nothing but the shadows of the images.</strong></p>
+
+<p>That is certain."</p>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" style="width: 428px; height: 571px; left: 506px; top: 24px;" data-block-id="5d77628e71dc27811d308226350f95ba">
+    <div class="sl-block-content" style="z-index: 12; transition-duration: 1.8s; transition-delay: 0.2s;" data-animation-type="fade-in">
+        <img style="" data-natural-width="600" data-natural-height="800" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3870867/plato.jpg">
+    </div>
+</div></section><section data-background-color="rgb(200,192,81)" data-background-size="contain" data-id="c5deaa69df751239f24f3c932a093850" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png">
+
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 250px; height: 280px; left: 571px; top: 21px;" data-block-id="4cb68d5eceaa83733b15cd02c36182c6">
+    <div class="sl-block-content" style="z-index: 11; transition-delay: 4.6s; transition-duration: 1s;" data-animation-type="fade-in">
+        <img style="" data-natural-width="1205" data-natural-height="1350" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3873961/5_guld__purple_logo.png">
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 79px; height: 80px; left: 140px; top: 127px;" data-block-id="fa097b4f9d1c43f8d55f415341797ad9">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(0, 0, 255)" data-shape-stretch="true" style="z-index: 12; transition-delay: 2.5s; transition-duration: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(0, 0, 255)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 51px; left: 273px; top: 328px;" data-block-id="506260bc2ce663597d42e6c10183d752">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(0, 0, 255); transition-duration: 1s; transition-delay: 1.5s;" data-animation-type="fade-in">
+        <p>life</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 79px; height: 80px; left: 380px; top: 473px;" data-block-id="c258078744dbc3e1c2bab5624e90ad10">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(0, 0, 255)" data-shape-stretch="true" style="z-index: 14; transition-duration: 1s; transition-delay: 0.5s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(0, 0, 255)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 311px; top: 367px;" data-block-id="ebd52a045d71fb0df4c67cec8165319c">
+    <div class="sl-block-content" data-line-x1="-95" data-line-y1="338" data-line-x2="-178" data-line-y2="245" data-line-color="#0000ff" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 15; transition-duration: 1s; transition-delay: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="83" height="93" viewbox="-178 245 83 93"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-95" y1="338" x2="-177" y2="246"></line><line stroke="#0000ff" stroke-width="2" x1="-95" y1="338" x2="-177" y2="246"></line><path style="fill: rgba(0,0,0,0);" stroke="#0000ff" stroke-width="2" transform="translate(-177,246) rotate(-41.748)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 194px; top: 237px;" data-block-id="3ce03c8ac8a4d2eed6425adac8ff2ea9">
+    <div class="sl-block-content" data-line-x1="-112" data-line-y1="321" data-line-x2="-191" data-line-y2="230" data-line-color="#0000ff" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 16; transition-duration: 1s; transition-delay: 2s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="79" height="91" viewbox="-191 230 79 91"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-112" y1="321" x2="-190" y2="232"></line><line stroke="#0000ff" stroke-width="2" x1="-112" y1="321" x2="-190" y2="232"></line><path style="fill: rgba(0,0,0,0);" stroke="#0000ff" stroke-width="2" transform="translate(-190,232) rotate(-40.962)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 166px; left: 460px; top: 328px;" data-block-id="b04534e6fc0c85c86b810eedc9e1671d">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(0, 0, 255); transition-duration: 1s; transition-delay: 3.5s;" data-animation-type="fade-in">
+        <p>comm.</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 448px; top: 367px;" data-block-id="895bd0cd24e6fa2889420b4ee2e7b927">
+    <div class="sl-block-content" data-line-x1="-218" data-line-y1="322" data-line-x2="-131" data-line-y2="234" data-line-color="#0000ff" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 18; transition-duration: 1s; transition-delay: 3s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="87" height="88" viewbox="-218 234 87 88"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-218" y1="322" x2="-132" y2="235"></line><line stroke="#0000ff" stroke-width="2" x1="-218" y1="322" x2="-132" y2="235"></line><path style="fill: rgba(0,0,0,0);" stroke="#0000ff" stroke-width="2" transform="translate(-132,235) rotate(44.673)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 563px; top: 282px;" data-block-id="db6dafa8e270024b2bdc0a858c9cd237">
+    <div class="sl-block-content" data-line-x1="38" data-line-y1="206" data-line-x2="90" data-line-y2="150" data-line-color="#0000ff" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 19; transition-duration: 1s; transition-delay: 4s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="52" height="56" viewbox="38 150 52 56"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="38" y1="206" x2="89" y2="151"></line><line stroke="#0000ff" stroke-width="2" x1="38" y1="206" x2="89" y2="151"></line><path style="fill: rgba(0,0,0,0);" stroke="#0000ff" stroke-width="2" transform="translate(89,151) rotate(42.879)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 878px; left: 41px; top: 571px;" data-block-id="494e6af616cd1676d47ada8b540e653d">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(31, 16, 76); border-style: solid; border-width: 1px; transition-duration: 2s; transition-delay: 5.5s;" data-animation-type="fade-in">
+<p>Everyone in our community records their experiences and observations in the blocktree. Then we compare branches to find shared truths...</p>
+</div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 79px; height: 80px; left: 260px; top: 127px;" data-block-id="61bab19ef5a213e74ccf7a19f5281fe4">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(255, 0, 0)" data-shape-stretch="true" style="z-index: 21; transition-delay: 2.5s; transition-duration: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(255, 0, 0)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 51px; left: 380px; top: 328px;" data-block-id="02cab221f39150932e667f2a32c3fb5a">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; color: rgb(255, 0, 0); transition-duration: 1s; transition-delay: 1.5s;" data-animation-type="fade-in">
+        <p>life</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 79px; height: 80px; left: 504px; top: 473px;" data-block-id="78d74b9eff155b9be60d8b5b0dedd05a">
+    <div class="sl-block-content" data-shape-type="symbol-user" data-shape-fill-color="rgb(255, 0, 0)" data-shape-stretch="true" style="z-index: 23; transition-duration: 1s; transition-delay: 0.5s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 24 32"><g class="shape-element" fill="rgb(255, 0, 0)"><path d="M12 16c-6.625 0-12 5.375-12 12 0 2.211 1.789 4 4 4h16c2.211 0 4-1.789 4-4 0-6.625-5.375-12-12-12zM6 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6-3.314 0-6-2.686-6-6z"></path></g></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 431px; top: 367px;" data-block-id="d377248b2d021bbaa2933cecfddf1e0e">
+    <div class="sl-block-content" data-line-x1="-95" data-line-y1="338" data-line-x2="-178" data-line-y2="249" data-line-color="#ff0000" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 24; transition-duration: 1s; transition-delay: 1s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="83" height="89" viewbox="-178 249 83 89"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-95" y1="338" x2="-177" y2="250"></line><line stroke="#ff0000" stroke-width="2" x1="-95" y1="338" x2="-177" y2="250"></line><path style="fill: rgba(0,0,0,0);" stroke="#ff0000" stroke-width="2" transform="translate(-177,250) rotate(-43.002)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 311px; top: 237px;" data-block-id="b8cfe2acf29525c2c4ca385dc4d88155">
+    <div class="sl-block-content" data-line-x1="-96" data-line-y1="332" data-line-x2="-179" data-line-y2="241" data-line-color="#ff0000" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 25; transition-duration: 1s; transition-delay: 2s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="83" height="91" viewbox="-179 241 83 91"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-96" y1="332" x2="-178" y2="242"></line><line stroke="#ff0000" stroke-width="2" x1="-96" y1="332" x2="-178" y2="242"></line><path style="fill: rgba(0,0,0,0);" stroke="#ff0000" stroke-width="2" transform="translate(-178,242) rotate(-42.368)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 166px; left: 605px; top: 328px;" data-block-id="1170f6595541a7bdb6a10beb6f9630c5">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 26; color: rgb(255, 0, 0); transition-duration: 1s; transition-delay: 3.5s;" data-animation-type="fade-in">
+        <p>comm.</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 571px; top: 367px;" data-block-id="bd57ddd5c0822bd654b26f1dac95aefb">
+    <div class="sl-block-content" data-line-x1="-218" data-line-y1="322" data-line-x2="-130" data-line-y2="233" data-line-color="#ff0000" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 27; transition-duration: 1s; transition-delay: 3s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="88" height="89" viewbox="-218 233 88 89"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-218" y1="322" x2="-131" y2="234"></line><line stroke="#ff0000" stroke-width="2" x1="-218" y1="322" x2="-131" y2="234"></line><path style="fill: rgba(0,0,0,0);" stroke="#ff0000" stroke-width="2" transform="translate(-131,234) rotate(44.676)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 688px; top: 282px;" data-block-id="142478592f4f06a3dba38a5a2efcee6c">
+    <div class="sl-block-content" data-line-x1="38" data-line-y1="206" data-line-x2="90" data-line-y2="150" data-line-color="#ff0000" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 28; transition-duration: 1s; transition-delay: 4s;" data-animation-type="fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="52" height="56" viewbox="38 150 52 56"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="38" y1="206" x2="89" y2="151"></line><line stroke="#ff0000" stroke-width="2" x1="38" y1="206" x2="89" y2="151"></line><path style="fill: rgba(0,0,0,0);" stroke="#ff0000" stroke-width="2" transform="translate(89,151) rotate(42.879)" d="M 6 6 L 0 0 L -6 6"></path></svg>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 696px; top: 9px;" data-block-id="213c0ffd0d1909a010299a9a172c0808"><div class="sl-block-content" data-line-x1="76" data-line-y1="212" data-line-x2="76" data-line-y2="175" data-line-color="#1f104c" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 29; transition-duration: 1s; transition-delay: 5s;" data-animation-type="fade-in"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="37" viewbox="76 175 1 37"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="76" y1="212" x2="76" y2="177"></line><line stroke="#1f104c" stroke-width="2" x1="76" y1="212" x2="76" y2="177"></line><path style="fill: rgba(0,0,0,0);" stroke="#1f104c" stroke-width="2" transform="translate(76,177) rotate(0)" d="M 6 6 L 0 0 L -6 6"></path></svg></div></div></section><section data-background-color="rgb(200,192,81)" data-background-size="contain" data-id="9b73adba49c9ca0467d5a70264f289ba" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png"><div class="sl-block" data-block-type="text" style="width: 890px; left: 35px; top: 28px; height: auto;" data-block-id="2a2b0c93f3afd2a96e38718088d89438">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="color: rgb(31, 16, 76); z-index: 12; border-style: solid; border-width: 1px; transition-duration: 3s;" dir="ui" data-animation-type="fade-in">
+<h1>Creating This Universe</h1>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 400px; left: 8px; top: 148px;" data-block-id="04ba569de6ec10364d70f263084340cc">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(31, 16, 76); transition-duration: 3.5s; transition-delay: 3.5s;" data-animation-type="fade-in">
+<p>"<strong>Observations</strong> not only disturb what is to be measured, they <strong>produce</strong> it."</p>
+
+<p>- Pascual Jordan</p>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 256px; height: 357px; left: 80px; top: 312px;" data-block-id="25d9a107e1798bca553d9ab69433a320">
+    <div class="sl-block-content" style="z-index: 14; transition-duration: 3s; transition-delay: 6.5s;" data-animation-type="fade-in">
+        <img style="" data-natural-width="491" data-natural-height="684" data-src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Pascual_Jordan_1920s.jpg">
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 339px; left: 611px; top: 456px;" data-block-id="922b73d1f8a13be849af6dff3b93ffbb">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(31, 16, 76); transition-duration: 3.5s; transition-delay: 12s;" data-animation-type="fade-in">
+<p>“The cosmos is within us. We are made of star-stuff. <strong>We are a way for the universe to know itself.</strong>”<br>
+- Carl Sagan</p>
+</div>
+</div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 226px; height: 308px; left: 678px; top: 140px;" data-block-id="a114709a696117878dbd52790845b8b2">
+    <div class="sl-block-content" style="z-index: 16; transition-duration: 3s; transition-delay: 16s;" data-animation-type="fade-in">
+        <img style="" data-natural-width="195" data-natural-height="266" data-src="http://images.gr-assets.com/authors/1475953320p5/10538.jpg">
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 300px; height: 300px; left: 340px; top: 270px;" data-block-id="11d21bee6a89bace091ea3915a3d34a8">
+    <div class="sl-block-content" style="z-index: 17; transition-duration: 4s; transition-delay: 10s;" data-animation-type="fade-in">
+        <img style="" data-natural-width="324" data-natural-height="324" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3871179/Transitive_Closure.svg">
+    </div>
+</div>
+</section><section data-background-color="rgb(200,192,81)" data-background-size="contain" data-id="5773091c275d13fea5d50daf7f25a7b2" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 155px;" data-block-id="9521676fb63e600ee5e59cce891712c0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(31, 16, 76); transition-duration: 1.6s; transition-delay: 0.7s;" data-animation-type="fade-in">
+<h1><span style="font-size:2.0em">Are You Awake?</span></h1>
+</div></div></section></section>
+			</div>
+		</div>
+
+
+		
+<script src="./scripts/slconfig.js"></script>
+<script src="./scripts/another.js"></script>	
+<script src="./scripts/another2.js"></script>
+<script src="./scripts/another3.js"></script>
+<script src="./scripts/initialize.js"></script>
+</body>
 </html>
