@@ -121,30 +121,17 @@ texture.repeat.set( 4, 4 );
    console.log(ground)*/
 var guldX = guldScreen.position.x;
 var guldZ = guldScreen.position.z;
-
-var times=0;
 var animCount=0;
 
  function enterPresentation(){
-  if(confirm("Are you awake?")){
+ // if(confirm("Are you awake?")){
     // add animation, on animation finish:
-        cameraEl.setAttribute('animation__'+animCount,{property:'position', dir:'normal', dur: 2000, easing:'easeInSine', loop:false, to:'0 4 0'})  
-  setTimeout(function(){
- window.open("./presentation.html","_self")
-  },1900)
-                
-              
-                }
-  else{
-    cameraEl.setAttribute('animation__'+animCount,{property:'position', dir:'normal', dur: 1000, easing:'easeInSine', loop:false, to:'20 4 20'})  
-  animCount++;
-  setTimeout(function(){
-    times=0;
+ cameraEl.setAttribute('animation__'+animCount,{property:'position', dir:'normal', dur: 2000, easing:'easeInSine', loop:false, to:'0 4 0'})  
 
-  },1000)
-
-  }
- }
+setTimeout(function(){
+ window.open("./presentation.html","_self")  },1900)
+}
+ 
    function costrainMovement(){
     var camPos= cameraEl.getAttribute("position")
     var camX = camPos.x
@@ -154,9 +141,9 @@ var animCount=0;
  /*console.log("x : "+ camX+" z : "+camZ)
  console.log(Math.abs(camX)+Math.abs(camZ))*/
 console.log(guldZ - camZ);
-if(guldX - camX<16&&guldZ - camZ<15&& guldX + camX<16&&guldZ + camZ<15&&times==0){
+if(guldX - camX<16&&guldZ - camZ<15&& guldX + camX<16&&guldZ + camZ<15){
   enterPresentation();
-  times++;
+
 }
 
 
@@ -181,28 +168,19 @@ if(guldX - camX<16&&guldZ - camZ<15&& guldX + camX<16&&guldZ + camZ<15&&times==0
    // --MOVEMENT COSTRAINT
 
     if (Math.abs(camX)+Math.abs(camZ)>100){
-      //alert("you cannot excape")
 
       if(camX>0&&camZ>0){
       cameraEl.setAttribute("position", {x: camX-1, z: camZ-1})
-      //camera.position.x -= 10
-      //camera.position.z -= 10
+
       } else if(camX>0&&camZ<=0){
     cameraEl.setAttribute("position", {x: camX-1, z: camZ+1})
 
-      //camera.position.x -= 10
-      //camera.position.z += 10
       } else if(camX<=0&&camZ<=0){
     cameraEl.setAttribute("position", {x: camX+1, z: camZ+1})
 
-      //camera.position.x += 10
-     // camera.position.z += 10
       } else if(camX<=0&&camZ>0){
    cameraEl.setAttribute("position", {x: camX+1, z: camZ-1})
 
-
-     // camera.position.x += 10
-      //camera.position.z -= 10
       }
     }
     requestAnimationFrame(costrainMovement);
@@ -213,6 +191,6 @@ costrainMovement();
  })
    
  </script>
-    <!-- <script src="./js/interactions.js"></script>-->
+ <!-- <script src="./js/interactions.js"></script>-->
 
 </html>
