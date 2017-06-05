@@ -1,4 +1,4 @@
-     document.addEventListener('click', function() {
+   /*  document.addEventListener('click', function() {
                         event.preventDefault();
 
             onDocumentMouseDown(event);
@@ -10,6 +10,7 @@ var mouse = new THREE.Vector2();
 
 var objs=[guldScreen];
         function onDocumentMouseDown(event) {
+
 
             mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
             mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
@@ -25,7 +26,7 @@ var objs=[guldScreen];
                
           
             }
-        }
+        }*/
     
  /*       
 document.addEventListener("keydown", function() {
@@ -56,5 +57,4 @@ document.addEventListener("keydown", function() {
         animationz[0].timeScale = 1;
     }
 })
-
 */
