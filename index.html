@@ -11,8 +11,8 @@
 		<meta content="authenticity_token" name="csrf-param" />
 		<meta content="aNhkK6FAqAFjeKQ3aHrCLGxXP1QeS9EKG3XPg0mIA5g=" name="csrf-token" />
 		<style id="user-css-output" type="text/css"></style>
-	
-	
+
+
 
 
 
@@ -24,7 +24,7 @@
     <script src="./libs/aframe-gif-shader.min.js"></script>
     <script src="./libs/aframe-gif-component.min.js"></script>
    <!--   <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>-->
-    
+
 </head>
 
 <body>
@@ -32,7 +32,7 @@
 <!-- <button id="open"> open</button>-->
 
 
-    <!-- ***** A-SCENE 
+    <!-- ***** A-SCENE
     density:0.009;*****-->
   <div id="loading"><p>Loading</p></div>
  <div id="aframebox">
@@ -61,7 +61,7 @@
    <a-entity id="ground" obj-model="obj: #ground-obj; mtl: #ground-mtl" scale="35 5 35"></a-entity>
    <a-entity  obj-model="obj: #ceiling-obj; mtl: #ceiling-mtl" scale="35 11 35" position="0 -5 0"></a-entity>
        <!-- <a-plane  src="./textures/rock1.jpg" id="ground" rotation="-90 0 0"  displacement-map="#disMap3" displacement-scale="1" displacement-bias="0.5" roughness="1" position="0 -0.2 0" height="200" width="200" repeat="1" color="#444" ></a-plane>-->
-<!--              
+<!--
         <a-entity id="extWalls">
             <a-box position="100 3 0" height="6" width="80" depth="0.2" rotation="0 90 0"></a-box>
             <a-box position="-100 3 0" height="6" width="80" depth="0.2" rotation="0 90 0"></a-box>
@@ -88,8 +88,8 @@
 
 
         <!-- ****OBJECTS****  -->
-      
-      <a-image material="fog: false" id="guldScreen" rotation="0 0 0" position="0 8 0" height="9" width="16" src="./textures/ruawake.png" mouse-cursor> 
+
+      <a-image material="fog: false" id="guldScreen" rotation="0 0 0" position="0 8 0" height="9" width="16" src="./textures/ruawake.png" mouse-cursor>
 
       </a-image>
 
@@ -132,23 +132,23 @@ var animCount=0;
  function enterPresentation(){
  // if(confirm("Are you awake?")){
     // add animation, on animation finish:
- cameraEl.setAttribute('animation__'+animCount,{property:'position', dir:'normal', dur: 2000, easing:'easeInSine', loop:false, to:'0 8 0'})  
+ cameraEl.setAttribute('animation__'+animCount,{property:'position', dir:'normal', dur: 2000, easing:'easeInSine', loop:false, to:'0 8 0'})
 
 setTimeout(function(){
     //$("#aframebox").css('display', 'hidden');
     $("#aframebox").css('z-index', -10);
     $("#aframebox").css('display', 'none');
     $("#start").css('z-index', 1000);
-     //window.open("./presentation.html","_self")  
+     //window.open("./presentation.html","_self")
  },1900)
 }
- 
+
    function costrainMovement(){
     var camPos= cameraEl.getAttribute("position")
     var camX = camPos.x
 
     var camZ = camPos.z
-    // 50 radius 
+    // 50 radius
  /*console.log("x : "+ camX+" z : "+camZ)
  console.log(Math.abs(camX)+Math.abs(camZ))*/
 console.log(guldZ - camZ);
@@ -165,7 +165,7 @@ if(guldX - camX<16&&guldZ - camZ<15&& guldX + camX<16&&guldZ + camZ<15){
                 times++;
                 if(confirm("Are you awake?")){
                 window.open("./presentation.html","_self")
-              
+
                 }
    } else if(Math.abs(camX)+Math.abs(camZ)>8){times=0}
      else if (Math.abs(camX)+Math.abs(camZ)<2&&Math.abs(camX)+Math.abs(camZ)>0){
@@ -195,12 +195,12 @@ if(guldX - camX<16&&guldZ - camZ<15&& guldX + camX<16&&guldZ + camZ<15){
       }
     }
     requestAnimationFrame(costrainMovement);
-  
+
 }
 
 costrainMovement();
  })
-   
+
  </script>
 
 
@@ -544,7 +544,7 @@ a community of thinking beings who explore and create this universe.
 <div class="sl-block" data-block-type="text" style="height: auto; width: 612px; left: 174px; top: 607px;" data-block-id="2a7d24f24dd9865402de5608a98c427a">
     <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(31, 16, 76); transition-delay: 6s; transition-duration: 2s;" dir="ui" data-animation-type="fade-in">
         <h2>
-            <a href="gap://media/text/html/gutenberg.org/Plato" target="_top">Plato</a>, 
+            <a href="gap://media/text/html/gutenberg.org/Plato" target="_top">Plato</a>,
             <a href="gap://media/text/html/gutenberg.org/Plato/The%20Republic,%20by%20Plato.htm#link2H_4_0010" target="_top">The Republic</a>
         </h2>
     </div>
@@ -693,15 +693,18 @@ a community of thinking beings who explore and create this universe.
 </div>
 </section><section data-background-color="rgb(200,192,81)" data-background-size="contain" data-id="5773091c275d13fea5d50daf7f25a7b2" data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/711044/images/3874009/slide_background_soft.png">
 <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 155px;" data-block-id="9521676fb63e600ee5e59cce891712c0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(31, 16, 76); transition-duration: 1.6s; transition-delay: 0.7s;" data-animation-type="fade-in">
-<h1><span style="font-size:2.0em">Are You Awake?</span></h1>
+<h1><span style="font-size:2.0em" id="finale"><a onclick="window.close()">Are You Awake?</a></span></h1>
+<!-- <input type="button" id="close" onclick="" value="Yes" /> -->
+<script>
+</script>
 </div></div></section></section>
 			</div>
 		</div>
 
 
-		
+
 <script src="./scripts/slconfig.js"></script>
-<script src="./scripts/another.js"></script>	
+<script src="./scripts/another.js"></script>
 <script src="./scripts/another2.js"></script>
 <script src="./scripts/another3.js"></script>
 <script src="./scripts/initialize.js"></script>
